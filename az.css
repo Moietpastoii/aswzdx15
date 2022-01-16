@@ -1,0 +1,97 @@
+* {
+    margin: 0
+}
+body {
+    background-image: url("https://images-cdn.welcomesoftware.com/Zz0wZGI4ZTI2NjhlNGQxMWViODVlN2QzNTI0ZjhkZTQyOA==");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+    
+    min-height:100vh;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    font-family: "Gill Sans", sans-serif;
+}
+
+.box {
+    position: fixed;
+    z-index: 5;
+    width: 30%;
+
+    overflow: auto;
+    transition: 0.3s ease-in-out;
+    opacity: 1;
+    transform: scale(1);
+
+    padding: 20px;
+    border: 1px solid #888;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+
+}
+.box-content {
+    margin: 15% auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.box-header {
+    font-size: 1.5rem;
+}
+.box-divider {
+    border-top: 1px solid #bbb;
+    margin-left: -20px;
+    width: 110%;
+    margin-top: 1rem;
+}
+#cmd-input {
+    margin: 1rem;
+    width: 60%;
+    height: 2rem;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    color: var(--main-color);
+    
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+}
+
+::placeholder {
+    color: var(--main-color);
+}
+.cmd-submit {
+    font-family: consolas;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    position: relative;
+    padding: 15px 30px;
+    display: flex;
+    
+    background: #fff;
+    color: #000;
+    border-radius: 5px;
+    text-decoration: none;
+    box-shadow: rgba(0, 0, 0, 0.2);
+    transition: 0.5s;
+}
+button:hover {
+    background: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+}
