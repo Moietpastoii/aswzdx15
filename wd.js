@@ -28,4 +28,7 @@ submitButton.onclick = function() {
         document.querySelector(".result").classList.add("box-result");
 
     }
+    if (submitValue == "esveilloit") {
+        document.querySelector(".result").textContent = "Attention, il faut entrer ce mot de passe sur le site principal !!"
+    }
 }
